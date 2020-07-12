@@ -1,0 +1,187 @@
+html,
+body,
+ul,
+ol,
+h1,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  background: #555;
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper .nav1 {
+  float: left;
+  width: 30%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.wrapper .nav1 .box {
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 4px 2px 1px #3ff9dc;
+  border-radius: 50%;
+  animation: moveBox 0.8s linear 0s infinite;
+}
+.wrapper .nav2 {
+  float: left;
+  width: 30%;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+.wrapper .nav2 .box1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #ffab91;
+  animation: moveBox1 6s 0s infinite;
+}
+.wrapper .nav2 .box2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #555;
+  border: 4px solid #3ff9dc;
+  transform: rotate(-45deg);
+  animation: moveBox2 6s 0s infinite;
+}
+.wrapper .nav3 {
+  float: left;
+  position: relative;
+  width: 33%;
+}
+.wrapper .nav3 .circle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.wrapper .nav3 .box3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: moveBox 2s linear 0s infinite;
+}
+.wrapper .nav3 .box3 .border-r {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #777;
+  border-radius: 50%;
+}
+.wrapper .nav3 .box3 .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 50%;
+  border-radius: 50%;
+  background: #3ff9dc;
+}
+.wrapper .nav3 .aaa {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: moveBox 3.5s linear 0s infinite;
+}
+.wrapper .nav3 .aaa .border-r {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #777;
+  border-radius: 50%;
+}
+.wrapper .nav3 .aaa .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 50%;
+  border-radius: 50%;
+  background: #3ff9dc;
+}
+.wrapper .nav3 .bbb {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: moveBox 5s linear 0s infinite;
+}
+.wrapper .nav3 .bbb .border-r {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #777;
+  border-radius: 50%;
+}
+.wrapper .nav3 .bbb .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 50%;
+  border-radius: 50%;
+  background: #3ff9dc;
+}
+@keyframes moveBox {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveBox1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(60deg);
+  }
+  40% {
+    transform: rotate(120deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  80% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveBox2 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(-105deg);
+  }
+  40% {
+    transform: rotate(-165deg);
+  }
+  60% {
+    transform: rotate(-225deg);
+  }
+  80% {
+    transform: rotate(-285deg);
+  }
+  100% {
+    transform: rotate(-345deg);
+  }
+}

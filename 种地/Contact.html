@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+
+<body>
+    <div class="contact">
+        <div class="biaod">
+            <form action="">
+                <h1>Name:</h1>
+                <input type="text" name="Name">
+            </form>
+        </div>
+        <div class="biaod">
+            <form action="">
+                <h1>Email:</h1>
+                <input type="text" name="Email">
+            </form>
+        </div>
+        <div class="biaod">
+            <form action="">
+                <h1>Subject:</h1>
+                <input type="text" name="Subject">
+            </form>
+        </div>
+        <div class="message">
+                <form action="">
+                    <h1>Message:</h1>
+                    <input type="text" name="message">
+                </form>
+            </div>
+            <form action="">
+                <input type="submit" value="SEND" >
+            </form>
+
+
+    </div>
+</body>
+<style>
+    .contact {
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    .contact .biaod {
+        width: 33%;
+        float: left;
+    }
+
+     .biaod form input[type="text"] {
+        width: 355px;
+        height: 40px;
+    }
+    .message form input[type="text"]{
+        width: 1140px;
+        height: 500px;
+    }
+    form input[type="submit"]{
+        width: 200px;
+        height: 50px;
+       background: #16A667;
+       outline: none;
+    }
+    form input[type="submit"]:hover {
+        background: yellowgreen;
+        /* outline: none; */
+    }
+
+</style>
+
+</html>

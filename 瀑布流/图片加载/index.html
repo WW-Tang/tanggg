@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEMO</title>
+</head>
+<body>
+    <script>
+        // 1.0 存放图片路径的数组
+        var data = [
+            '../static/images/1.jpg',
+            '../static/images/2.jpg',
+            '../static/images/3.jpg',
+            '../static/images/4.jpg',
+            '../static/images/5.jpg',
+        ]
+        // 2.0 存放图片尺寸的数组
+        var arrHeight = []
+        // 3.0 循环图片数组
+        for(var i = 0 ; i < data.length; i++){
+            // var img = document.createElement('img');
+            // 创建一个图片元素
+            var img = new Image();
+            // 利用src属性请求资源
+            img.src = data[i];
+            // 加载图片
+            img.onload = function(){
+                // var w  = img.width ; //图片的宽度
+                // var h = img.height;  //图片的高度
+                // 定义对象 记录当前图片尺寸
+                // this 事件调用者
+                var obj = {
+                    width:this.width,
+                    height:this.height
+                }
+                // 添加到高度数组
+                arrHeight.push(obj);
+                console.log(arrHeight)
+            }
+        }
+        // console.log(arrHeight) []
+
+
+
+
+        function fn(img){
+            var height ;
+            img.onload = function(){
+                height = this.height;
+            }
+        }
+        
+    </script>
+</body>
+</html>

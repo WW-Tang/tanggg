@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dakuang{
+    background: url(./images/banner.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: top center; 
+    padding-top: 15px;
+
+}
+.top{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    /* height: 25px; */
+    line-height: 58px;
+    background: aquamarine;
+    overflow: hidden;
+    background: rgba(0,0,0,0.41);
+}
+.top .left ul li{
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+.top .left ul li a{
+    text-decoration: none;
+    color: white;
+}
+.top .left ul li a:hover{
+    border-top: 2px solid yellow;
+    cursor: pointer;
+    color: yellow;
+}
+
+.top .left ul li span:hover{
+    border-top: 2px solid yellow;
+    cursor: pointer;
+    color: yellow;
+}
+
+.top .left ul li::after{
+    content: '/';
+    color: white;
+    padding: 0 0 0 20px;
+}
+
+.top .left ul li:last-child::after{
+   content: none;
+}
+.right{
+    float: right;
+    margin: 0 15px;
+    position: relative;
+}
+.right input:first-child{
+    height: 36px;
+    border: 1px solid white;
+    outline: 0;
+    padding: 0 10px;
+    background: transparent;
+    color: white;
+    
+}
+.right input:last-child{
+    width: 22px;
+    height: 22px;
+    border:0;
+    outline: 0;
+    background: url(./search.png) center;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.dakuang h1{
+    text-align: center;
+    margin: 200px 0;
+    color: white;
+    font-size: 50px;
+}
+.dakuang h1 span{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+.dahe{
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+.dahe .he .kuang img{
+    border: 6px solid white;
+   border-radius:50%;
+   padding: 30px;
+}
+.dahe .he .kuang img:hover{
+    transition: all .5s; 
+    transform: rotateY(360deg);
+
+}
+.dahe .he{
+    width: 25%;
+    float: left;
+}
+.dahe .he .kuang{
+    float: left;
+    background: #16A667;
+    margin: 0 10px;
+    padding: 20px;
+    position: relative;
+    margin-top: 17px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin:50px auto 50px auto;
+}
+.container .biaoti h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.container .about .tu{
+    float: left;
+    width: 40%;
+}
+.container .about .weizi{
+    float: right;
+    width: 55%;
+    color: #555;
+}
+.container .about .weizi .s{
+    margin: 30px 0;
+}
+.container .about .weizi .x{
+    margin: 30px 0;
+}
+.Services{
+    width: 100%;
+    background: #37353b;
+    overflow: hidden;
+    color: white;
+}
+.Services .bighe{
+    margin: 0 auto;
+    width: 1140px;
+}
+.Services .bighe .our h1{
+    text-align: left;
+    font-size: 40px;
+    margin: 30px 0;
+    left:0;                                                                                                                                                                                                
+    /* float: left; */
+}
+.Services .bighe .hes{
+    width: 33%;
+    text-align: center;
+    float: left;
+}
+.Services .bighe .hes .xiaohe{
+    margin: 15px;
+}
+.Services .bighe .hes .xiaohe img{
+    background: #16A667;
+    padding: 7px 14px;
+    border-radius: 10px;
+}
+.Services .bighe .hes .xiaohe img:hover{
+    background: #f2af00;
+}
+.Services .bighe .hes .xiaohe h3{
+    margin: 10px 0;
+}
+.work ul li{
+    list-style: none;
+    float: left;
+
+}
+.da{
+    width: 100%;
+    background: #eee;
+    overflow: hidden;
+    /* margin: 30px 0; */
+}
+.bigwork{
+    width: 1140px;
+    margin: 0 auto;
+}
+.bigwork .shang{
+    margin: 30px 0;
+}
+.tu1{
+    width: 350px; 
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.tu1 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tu1::after{
+    content: '';
+    /* height: 60px;
+    width: 60px; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, .3) url(./images/magnify.png) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+     transform: scale(0);
+     transition: all 1s;
+     box-shadow: 0 0 10px 0 white;
+}
+.tu1:hover::after{
+    transform: scale(1);
+}
+.bigwork ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+.bigwork ul li .tu1{
+    width: 100%;
+    height: 100%;
+}
+.new{
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.new .newt{
+    margin: 50px 0;
+}
+
+.new .newz {
+    width: 30%;
+    float: left;
+    margin-right: 38px;   
+}
+.new .newz .hek img{
+    width: 100%;
+    height: 100%;
+}
+
+.new .newz p{
+    color: #999;
+ 
+}
+
+.new .newz h5{
+    margin-top: 10px;
+    color: #999;
+}
+.new .newz h5 a{
+    text-decoration: none;
+    color: #000;
+}
+.new .newz p{
+    margin: 15px 0;
+}
+
+.read{
+    width: 150px;
+    height:40px;
+    background: #f2af00;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+}
+.read h4{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.read .z{
+    width: 100%;
+    height: 100%;
+    background: #16A667;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:rotatex(180deg);
+    z-index: 0;
+
+}
+.read:hover .z{
+    transform:rotatex(90deg);
+    transition: all 1s;
+}
+.da-footer{
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    padding-bottom: 35px;
+    /* display: inline-block; */
+  
+}
+.da-footer .footer{
+    width: 1140px;
+    margin: 0 auto;
+}
+ .da-footer .footer .xiaofooter{
+    width: 33%;
+    float: left;
+} 
+ .da-footer .footer .ti h2{
+    margin: 50px 0 30px 0;
+    /* padding-top: 50px; */
+    color: white;
+}
+.footer{
+    overflow: hidden;
+}
+.xxfooter{
+    height: 260px;
+    overflow: hidden;
+}
+.up-text{
+    height: 33%;
+}
+ .up-left{
+    /* width: 30%; */
+    float: left;
+    width: 70px;
+    height: 80px;
+}
+.up-left img{
+    width: 100%;
+}
+ .up-right{
+    width:75%;
+    float: right;
+} 
+.da-footer .footer .xiaofooter .xxfooter .up-text .up-right h3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.da-footer .footer .xiaofooter .xxfooter .up-text .up-right p{
+    color: #999;
+}
+.jiant{
+    float: left;
+    margin-bottom: 15px;
+}
+.jiant a{
+    text-decoration: none;
+    color: #999;
+    margin-left: 5px;
+}
+.jiant a:hover{
+   color: #f2af00;
+}
+
+.bao{
+    height: 33%;
+    margin-bottom: 30px;
+    color: #999;
+}
+.you .bao .lefts{
+    width: 50px;
+    height: 50px;
+    background: url(./images/img-sprite1.png);
+    float: left;
+    background-position-x: -220px;
+}
+.you .bao .left1{
+    width: 45px;
+    height: 45px;
+    background: url(./images/img-sprite1.png);
+    float: left; 
+    background-position: -258px 0;
+}
+.you .bao .left2{
+    width: 45px;
+    height: 45px;
+    background: url(./images/img-sprite1.png);
+    float: left; 
+    background-position: -298px 0;
+}
+.bao p a{
+    text-decoration: none;
+    color: #999;
+}
+.bao p a:hover{
+    color: #f2af00;
+}
+
+
+
+.row{
+    width: 1140px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.row .jingl{
+    width: 55px;
+    height: 55px;
+    background: url(./images/img-sprite1.png);
+    display: inline-block;
+    text-align: center;
+    margin: 50px 15px 20px 15px;
+}
+.row .jingl:nth-child(1){
+    background-position-x: -2px;
+}
+.row .jingl:nth-child(2){
+    background-position-x: -58px;
+}
+.row .jingl:nth-child(3){
+    background-position-x: -112px;
+}
+.row .jingl:nth-child(4){
+    background-position-x: -167px;
+}
+.daoh{
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+   
+}
+.zbao{
+    overflow: hidden;
+    width: 690px;
+    margin: 0 auto;
+}
+.daoh ul li{
+    list-style: none;
+    float: left;
+    margin: 0 30px 30px 30px;
+}
+.daoh ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

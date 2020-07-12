@@ -1,0 +1,112 @@
+html , body , ul , ol , h1 ,h2,h3,h4,h5 ,p {
+    padding: 0;
+    margin: 0;
+}
+ul , ol {
+    list-style: none;
+}
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #333;
+}
+
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.clearfix::before ,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html , body {
+    // height: 100%;
+}
+
+.d-wrapper {
+    .d-header {
+        .d-header-box {
+            width: 1200px;
+            margin: 0 auto;
+            h3 {
+                text-align: center;
+                height: 80px;
+                line-height: 80px;
+                background-color: lightyellow;
+            }
+        }
+    }
+    .d-contain {
+        margin-top: 10px;
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            li {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 232px;
+                a {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    img {
+                        width: 232px;
+                        display: block;
+                    }
+                    span {
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-image: url(../images/loading.gif);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: #f8f8f8;
+                    }
+                }
+                p {
+                    padding: 10px 8px;
+                    box-shadow: 0 1px 2px #ccc;
+                    color: #666;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .d-loading {
+        width: 1200px;
+        // height: 800px;
+        height: 100%;
+        background-color: #fff;
+        position: fixed;
+        left: 50%;
+        margin-left: -600px;
+        top: 0;
+        display: none;
+        .box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .icon {
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-image: url(../images/loading.gif);
+                background-size: 30px;
+                margin: 100px auto;
+            }
+        }
+    }
+    .d-loading.acitve {
+        display: none!important;
+    }
+}

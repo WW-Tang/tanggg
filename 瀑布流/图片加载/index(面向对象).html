@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEMO</title>
+</head>
+<body>
+    <script>
+        // 存放图片路径的数组
+        var data = [
+            '../static/images/1.jpg',
+            '../static/images/2.jpg',
+            '../static/images/3.jpg',
+            '../static/images/4.jpg',
+            '../static/images/5.jpg',
+        ]
+
+        // 1.0 定义构造函数
+        function Page(data){
+            // 添加属性 数组
+            this.data = data;
+            this.arrHeight = [];
+            // 调用init方法
+            this.init();
+        }
+        // 2.0 原型属性
+        Page.prototype.init = function(){
+            // 记录this
+            var _this = this;
+            // 定义计数器变量
+            var index = 0;
+            // 3.0 循环数组
+            for(var i = 0 ; i < this.data.length ; i++){
+                // 创建图片
+                var img = new Image();
+                // 请求资源
+                img.src = this.data[i];
+                // 图片加载
+                img.onload = function(){
+                    // 加一
+                    index ++;
+                    // console.log(img)
+                    // 对象存放图片尺寸
+                    var obj = {"width":this.width, "height":this.height,'text':"第"+index+"张图片"}
+                    // 添加每个图片高度
+                    _this.arrHeight.push(obj)
+                    if(index === _this.data.length){
+                        _this.foo();
+                    }
+                }
+            }
+        }
+        // 添加foo
+        Page.prototype.foo = function(){
+            // 获取图片的信息
+            console.log(this.arrHeight)
+        }
+        // 创建Page的实例
+        var page = new Page(data)
+     
+        
+        
+        
+    </script>
+</body>
+</html>
